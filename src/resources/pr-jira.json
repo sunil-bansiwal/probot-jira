@@ -1,5 +1,5 @@
 {
-  "issueKeyRegex": "^*\\[([^\\[^\\]]+)\\].*$",
+  "issueKeyRegex": "^[a-zA-Z0-9]*\\[([^\\[^\\]]+)\\].*$",
   "fixVersionRegex": "^(.+)$",
   "postMergeStatus": [ "Done" ]
 }

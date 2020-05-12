@@ -447,7 +447,8 @@ function jiraIssueKey(
     const msg = `doesn't match issue expression (${config.issueKeyRegex})`
 
     context.log.debug(`Title of pull request #${pr.number} ${msg}: ${pr.title}`)
-    return either.left(new Error(msg))   } else {
+    return either.left(new Error(msg))   
+  } else {
     return either.right(m[1])
   }
 }
